@@ -71,7 +71,10 @@ const EditProfilePage = () => {
       </span>
       <div className={styles.profileimageFormWrapper}>
         {profileImagePath.length ? (
-          <img src={`https://timelinetwitch.link/profileimage/${profileImagePath}`} alt='my profile' />
+          <img
+            src={`https://timelinetwitch.link/profileimage/${profileImagePath}`}
+            alt='my profile'
+          />
         ) : (
           <img
             src={`https://timelinetwitch.link/profileimage/${myInfo?.profileimagesrc}`}
