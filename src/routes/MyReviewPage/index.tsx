@@ -34,7 +34,7 @@ const MyReviewPage = () => {
               <ul className={styles.review}>
                 <li className={styles.snackImgWrapper}>
                   <img
-                    src={`http://localhost:3065/snackimage/${review.Snack.imagesrc}`}
+                    src={`https://timelinetwitch.link/snackimage/${review.Snack.imagesrc}`}
                     alt={review.Snack.imagesrc}
                   />
                 </li>

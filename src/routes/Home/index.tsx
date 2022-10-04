@@ -60,7 +60,7 @@ const Home = () => {
                 <Link to={`/snack/${item.id}`} key={item.id}>
                   <ul className={styles.infoWrapper}>
                     <img
-                      src={`http://localhost:3065/snackimage/${item.imagesrc}`}
+                      src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                       alt={item.name}
                     />
                     <li>{item.name}</li>
@@ -93,7 +93,7 @@ const Home = () => {
                 <Link to={`/snack/${item.id}`} key={item.id}>
                   <ul className={styles.infoWrapper}>
                     <img
-                      src={`http://localhost:3065/snackimage/${item.imagesrc}`}
+                      src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                       alt={item.name}
                     />
                     <li>{item.name}</li>
@@ -127,7 +127,7 @@ const Home = () => {
                 <Link to={`/snack/${item.id}`} key={item.id}>
                   <ul className={styles.infoWrapper}>
                     <img
-                      src={`http://localhost:3065/snackimage/${item.imagesrc}`}
+                      src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                       alt={item.name}
                     />
                     <li>{item.name}</li>

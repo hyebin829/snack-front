@@ -99,7 +99,7 @@ const LoginModal = () => {
           <button type='button' onClick={handleCloseModal} className={styles.closeButton}>
             <IoMdClose size={20} />
           </button>
-          <a href='http://localhost:3065/user/kakao/login'>
+          <a href='https://timelinetwitch.link/user/kakao/login'>
             <img src='/images/kakao_login_medium_narrow.png' alt='kakao login' />
           </a>
         </div>

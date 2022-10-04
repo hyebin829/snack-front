@@ -26,7 +26,7 @@ const ProfilePage = () => {
       <div className={styles.profileWrapper}>
         {myInfo.profileimagesrc ? (
           <img
-            src={`http://localhost:3065/profileimage/${myInfo.profileimagesrc}`}
+            src={`https://timelinetwitch.link/profileimage/${myInfo.profileimagesrc}`}
             alt='my profile'
           />
         ) : (

@@ -57,7 +57,7 @@ const SearchPage = () => {
             <Link to={`/snack/${item.id}`} key={item.id} className={styles.resultItemWrapper}>
               <li className={styles.snackimageWrapper}>
                 <img
-                  src={`http://localhost:3065/snackimage/${item.imagesrc}`}
+                  src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                   alt={item.name}
                   className={styles.snackimage}
                 />

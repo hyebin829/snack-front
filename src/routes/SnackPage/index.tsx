@@ -48,7 +48,7 @@ const SnackPage = () => {
         <ul className={styles.snackInfoWrapper}>
           <FavoriteButton snackId={snackId} />
           <img
-            src={`http://localhost:3065/snackimage/${snackInfo?.imagesrc}`}
+            src={`https://timelinetwitch.link/snackimage/${snackInfo?.imagesrc}`}
             alt={snackInfo?.name}
           />
           <li className={styles.snackName}>{snackInfo?.name}</li>

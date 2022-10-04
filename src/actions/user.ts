@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit'
 import { snackid } from 'types/post'
 import { loginInfo, profileImagesrc, signupInfo, userNickname } from 'types/user'
 
-axios.defaults.baseURL = 'http://localhost:3065'
+axios.defaults.baseURL = 'https://timelinetwitch.link'
 axios.defaults.withCredentials = true
 
 export const loadMyInfo = createAsyncThunk('user/loadMyInfo', async () => {

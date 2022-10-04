@@ -52,7 +52,7 @@ const ReviewListPage = () => {
               <ul className={styles.review}>
                 <li className={styles.userProfile}>
                   <img
-                    src={`http://localhost:3065/profileimage/${review.User?.profileimagesrc}`}
+                    src={`https://timelinetwitch.link/profileimage/${review.User?.profileimagesrc}`}
                     alt='profile'
                   />
                   {review.User?.nickname}

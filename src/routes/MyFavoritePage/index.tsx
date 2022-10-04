@@ -22,7 +22,7 @@ const MyFavoritePage = () => {
                 <ul>
                   <li>
                     <img
-                      src={`http://localhost:3065/snackimage/${snack.imagesrc}`}
+                      src={`https://timelinetwitch.link/snackimage/${snack.imagesrc}`}
                       alt={snack.name}
                     />
                   </li>
