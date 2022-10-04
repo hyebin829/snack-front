@@ -1,0 +1,91 @@
+@use '/src/styles/constants/colors';
+
+.noReview {
+  padding-top: 20px;
+}
+
+.reviewWrapper {
+  margin-bottom: 15px;
+  border-bottom: 1px solid colors.$BACKGROUND;
+
+  .review {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 3px;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    border-bottom: 2px solid colors.$GRAY5;
+
+    .userProfile {
+      display: flex;
+      grid-column: 1/5;
+      gap: 5px;
+      align-items: center;
+      justify-self: start;
+      font-size: 15px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        border-radius: 50%;
+      }
+
+      .rating {
+        display: flex;
+        grid-column: 5/6;
+        gap: 2px;
+        align-items: center;
+        justify-content: flex-start;
+        justify-self: end;
+        width: 55px;
+        padding: 2px 5px;
+        font-size: 15px;
+      }
+    }
+
+    .deleteButton {
+      display: flex;
+      grid-column: 5/6;
+      justify-self: end;
+      margin-right: 5px;
+      color: colors.$GRAY2;
+    }
+
+    .reviewcontent {
+      grid-row: 2/5;
+      grid-column: 1/6;
+      align-self: start;
+      padding: 5px 0 15px;
+    }
+
+    .createdDate {
+      grid-row: 5/6;
+      grid-column: 1/3;
+      justify-self: start;
+      padding-bottom: 10px;
+      font-size: 13px;
+      color: colors.$GRAY2;
+    }
+
+    .likers {
+      display: flex;
+      grid-row: 5/6;
+      grid-column: 4/6;
+      gap: 2px;
+      justify-self: end;
+      font-size: 15px;
+      color: colors.$FONT;
+
+      span {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .target {
+    width: 20px;
+    height: 10px;
+  }
+}
