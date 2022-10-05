@@ -36,7 +36,7 @@ const Home = () => {
     dispatch(loadPopularSnack())
     dispatch(loadTopRatingSnack())
     dispatch(loadTopReviewSnack())
-    dispatch(loadMyInfo())
+    // dispatch(loadMyInfo())
     if (myInfo?.id) {
       dispatch(loadMyReviews({ userId: myInfo?.id }))
     }
