@@ -2,7 +2,7 @@ import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { likeReviewId, myId, review, reviewId, snackid, userReview, word } from 'types/post'
 
-axios.defaults.baseURL = 'https://timelinetwitch.link'
+axios.defaults.baseURL = '/api'
 axios.defaults.withCredentials = true
 
 export const loadPopularSnack = createAsyncThunk('post/loadPopularSnack', async () => {
