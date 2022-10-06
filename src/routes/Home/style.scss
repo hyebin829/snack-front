@@ -38,7 +38,9 @@
 }
 
 .swiper-button-disabled {
-  background-color: colors.$GRAY6;
+  @include responsive.after(ML) {
+    background-color: colors.$GRAY6;
+  }
 }
 
 .swiper {
