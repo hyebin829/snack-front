@@ -9,7 +9,7 @@ import {
   loadTopRatingSnack,
   loadTopReviewSnack,
 } from 'actions/post'
-// import { loadMyInfo } from 'actions/user'
+import { loadMyInfo } from 'actions/user'
 import HomeSkeleton from 'components/Skeleton/HomeSkeleton'
 import styles from './home.module.scss'
 import 'swiper/scss'
@@ -36,7 +36,7 @@ const Home = () => {
     dispatch(loadPopularSnack())
     dispatch(loadTopRatingSnack())
     dispatch(loadTopReviewSnack())
-    // dispatch(loadMyInfo())
+    dispatch(loadMyInfo())
     if (myInfo?.id) {
       dispatch(loadMyReviews({ userId: myInfo?.id }))
     }
