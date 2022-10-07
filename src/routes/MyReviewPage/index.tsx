@@ -53,13 +53,11 @@ const MyReviewPage = () => {
                   </span>
                   {review.Likers.length}
                 </li>
-                <button
-                  type='button'
-                  onClick={() => handleOpenModal(review.id)}
-                  className={styles.deleteButton}
-                >
-                  삭제
-                </button>
+                <li className={styles.deleteButton}>
+                  <button type='button' onClick={() => handleOpenModal(review.id)}>
+                    삭제
+                  </button>
+                </li>
               </ul>
             </li>
           ))}

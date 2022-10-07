@@ -39,7 +39,7 @@ const SearchPage = () => {
             onChange={handleSearch}
             placeholder='과자 이름을 검색해보세요'
           />
-          <button type='submit'>
+          <button type='submit' aria-label='search'>
             <BiSearch size={20} />
           </button>
         </form>

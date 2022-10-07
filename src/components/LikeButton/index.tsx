@@ -24,7 +24,7 @@ const LikeButton = ({ review }: review) => {
   }
 
   return (
-    <button type='button' onClick={toggleReviewLike}>
+    <button type='button' onClick={toggleReviewLike} aria-label='like toggle'>
       {liked ? <RiThumbUpFill color='#ff7134' /> : <RiThumbUpLine color='#ff7134' />}
     </button>
   )

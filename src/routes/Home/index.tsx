@@ -59,10 +59,12 @@ const Home = () => {
               ) : (
                 <Link to={`/snack/${item.id}`} key={item.id}>
                   <ul className={styles.infoWrapper}>
-                    <img
-                      src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
-                      alt={item.name}
-                    />
+                    <li>
+                      <img
+                        src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
+                        alt={item.name}
+                      />
+                    </li>
                     <li>{item.name}</li>
                     <li>{item.brand}</li>
                     <li className={styles.heartCount}>
@@ -92,10 +94,12 @@ const Home = () => {
               ) : (
                 <Link to={`/snack/${item.id}`} key={item.id}>
                   <ul className={styles.infoWrapper}>
-                    <img
-                      src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
-                      alt={item.name}
-                    />
+                    <li>
+                      <img
+                        src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
+                        alt={item.name}
+                      />
+                    </li>
                     <li>{item.name}</li>
                     <li>{item.brand}</li>
                     <li>
@@ -126,10 +130,12 @@ const Home = () => {
               ) : (
                 <Link to={`/snack/${item.id}`} key={item.id}>
                   <ul className={styles.infoWrapper}>
-                    <img
-                      src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
-                      alt={item.name}
-                    />
+                    <li>
+                      <img
+                        src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
+                        alt={item.name}
+                      />
+                    </li>
                     <li>{item.name}</li>
                     <li>{item.brand}</li>
                     <li>{item.count} 리뷰</li>

@@ -27,7 +27,12 @@ const FavoriteButton = ({ snackId }: snackid) => {
   }
 
   return (
-    <button type='button' onClick={onClickFavoriteButton} className={styles.favoriteButton}>
+    <button
+      type='button'
+      onClick={onClickFavoriteButton}
+      className={styles.favoriteButton}
+      aria-label='favorite toggle'
+    >
       {followed ? (
         <IoMdHeart size={25} color='#ff7134' />
       ) : (
