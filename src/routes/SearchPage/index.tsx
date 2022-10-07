@@ -44,7 +44,7 @@ const SearchPage = () => {
           </button>
         </form>
       </div>
-      {debouncedValue && !searchWordList.length && (
+      {debouncedValue && !searchWordList.length && !loadSearchWordLoading && (
         <div className={styles.noResult}>
           &apos;{debouncedValue}&apos;의 검색 결과가 존재하지 않습니다.
         </div>

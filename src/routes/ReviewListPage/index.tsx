@@ -85,7 +85,7 @@ const ReviewListPage = () => {
           ))}
         </ul>
       ) : (
-        <div className={styles.noReview}>리뷰가 없습니다.</div>
+        !loadReviewsLoading && <div className={styles.noReview}>리뷰가 없습니다.</div>
       )}
       {loadReviewsLoading && <Spiner />}
       <div ref={target} className={styles.target} />
