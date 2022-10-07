@@ -46,11 +46,15 @@ const SnackPage = () => {
         <SnackSkeleton />
       ) : (
         <ul className={styles.snackInfoWrapper}>
-          <FavoriteButton snackId={snackId} />
-          <img
-            src={`https://timelinetwitch.link/snackimage/${snackInfo?.imagesrc}`}
-            alt={snackInfo?.name}
-          />
+          <li>
+            <FavoriteButton snackId={snackId} />
+          </li>
+          <li>
+            <img
+              src={`https://timelinetwitch.link/snackimage/${snackInfo?.imagesrc}`}
+              alt={snackInfo?.name}
+            />
+          </li>
           <li className={styles.snackName}>{snackInfo?.name}</li>
           <li className={styles.snackBrand}>{snackInfo?.brand}</li>
           <li className={styles.rating}>
@@ -60,11 +64,11 @@ const SnackPage = () => {
           {myReview?.length ? (
             <div />
           ) : (
-            <div className={styles.reviewButtonWrapper}>
+            <li className={styles.reviewButtonWrapper}>
               <button type='button' onClick={handleOpenReviewModal}>
                 <HiPencilAlt /> 리뷰 작성하기
               </button>
-            </div>
+            </li>
           )}
         </ul>
       )}
