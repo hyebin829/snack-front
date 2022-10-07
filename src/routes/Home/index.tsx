@@ -63,6 +63,8 @@ const Home = () => {
                       <img
                         src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                         alt={item.name}
+                        width='120'
+                        height='120'
                       />
                     </li>
                     <li>{item.name}</li>
@@ -98,6 +100,8 @@ const Home = () => {
                       <img
                         src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                         alt={item.name}
+                        width='120'
+                        height='120'
                       />
                     </li>
                     <li>{item.name}</li>
@@ -134,6 +138,8 @@ const Home = () => {
                       <img
                         src={`https://timelinetwitch.link/snackimage/${item.imagesrc}`}
                         alt={item.name}
+                        width='120'
+                        height='120'
                       />
                     </li>
                     <li>{item.name}</li>
