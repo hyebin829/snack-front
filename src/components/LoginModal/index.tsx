@@ -92,16 +92,9 @@ const LoginModal = () => {
               </button>
             </div>
           </form>
-          <div className={styles.loginTitle}>
-            카카오 로그인으로 <br />
-            간편하게 회원가입 및 로그인이 가능합니다.
-          </div>
           <button type='button' onClick={handleCloseModal} className={styles.closeButton}>
             <IoMdClose size={20} />
           </button>
-          <a href='https://timelinetwitch.link/user/kakao/login'>
-            <img src='/images/kakao_login_medium_narrow.png' alt='kakao login' />
-          </a>
         </div>
       </div>
     </Portal>
