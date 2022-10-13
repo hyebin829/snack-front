@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Layout from 'components/Layout'
 import Home from './Home'
 import NotFound from './NotFoundPage'
@@ -19,9 +19,11 @@ const TRACKING_ID = process.env.REACT_APP_TRACKING_ID || ''
 ReactGA.initialize(TRACKING_ID)
 
 const App = () => {
+  const location = useLocation()
+
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
+  }, [location])
 
   return (
     <div className={styles.app}>
